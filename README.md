@@ -19,17 +19,23 @@ A streamlined, menu-driven CLI tool designed to showcase interactive C# examples
 
 ## Running Locally
 
+<br>
+
 1. Clone the repository
 
 ```bash
 git clone https://github.com/kylecurtis/csharp-examples.git
 ```
 
+<br>
+
 2. Navigate to Repository Directory
 
 ```bash
 cd path/to/repo/
 ```
+
+<br>
 
 3. Build & Run the Project
 
