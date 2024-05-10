@@ -1,5 +1,4 @@
-﻿using System;
-using System.Numerics; // Required for BigInteger
+﻿using System.Numerics; // Required for BigInteger
 
 namespace CSharpExamples._02_Data_Types
 {
