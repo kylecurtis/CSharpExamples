@@ -44,6 +44,12 @@ namespace CSharpExamples
 
                 switch (choice)
                 {
+                    case "hello world" or "hello":
+                        Console.Clear();
+                        HelloWorld.Run();
+                        Line();
+                        Continue();
+                        break;
                     case "variables" or "var":
                         Console.Clear();
                         Variables.Run();
