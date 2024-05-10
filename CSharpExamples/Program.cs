@@ -32,6 +32,7 @@ namespace CSharpExamples
                     DATA TYPES
                     ----------
                       - Integers (int)
+                      - Floats (float)
                   
                     MENU
                     ----
@@ -53,6 +54,12 @@ namespace CSharpExamples
                     case "variables" or "var":
                         Console.Clear();
                         Variables.Run();
+                        Line();
+                        Continue();
+                        break;
+                    case "floats" or "float":
+                        Console.Clear();
+                        Floats.Run();
                         Line();
                         Continue();
                         break;
