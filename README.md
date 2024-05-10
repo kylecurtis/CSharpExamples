@@ -1,6 +1,8 @@
 # C# Examples
 
-A streamlined, menu-driven CLI tool designed to showcase interactive C# examples across a variety of programming topics. 
+A menu-driven CLI tool designed to showcase interactive C# examples across a variety of programming topics.
+
+![DotNET Version 8](https://img.shields.io/badge/.NET_Version-8-purple) ![CSharp Version 12](https://img.shields.io/badge/C_Sharp_Version-12-purple)
 
 <br>
 
