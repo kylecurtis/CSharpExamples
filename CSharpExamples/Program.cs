@@ -1,4 +1,5 @@
 ﻿using CSharpExamples._01_Basics;
+using CSharpExamples._02_Data_Types;
 
 namespace CSharpExamples
 {
@@ -9,29 +10,55 @@ namespace CSharpExamples
             static void Line()
             {
                 Console.WriteLine("===========================================================");
-            } 
+            }
+
+            static void Continue()
+            {
+                Console.WriteLine();
+                Console.Write("Press Enter to continue...");
+                Console.ReadLine();
+            }
 
             while (true)
             {
-                Console.WriteLine();
-                Console.WriteLine("Select an option:");
-                Console.WriteLine("1. Variables");
-                Console.WriteLine("0. Exit");
-                Console.WriteLine();
-                Console.Write("Enter your choice: ");
+                Console.Clear();
+                Console.WriteLine(
+                    """
+                    C# BASICS
+                    ---------
+                      - Hello, World! (hello)
+                      - Variables (var)
+                    
+                    DATA TYPES
+                    ----------
+                      - Integers (int)
+                  
+                    MENU
+                    ----
+                      - exit (q)
+                      
+                    """);
+                Console.Write("> ");
 
-                var choice = Console.ReadLine();
+                string? choice = Console.ReadLine();
 
                 switch (choice)
                 {
-                    case "1":
+                    case "variables" or "var":
                         Console.Clear();
-                        Console.WriteLine();
                         Variables.Run();
-                        Console.WriteLine();
                         Line();
+                        Continue();
                         break;
-                    case "0":
+                    case "integers" or "int":
+                        Console.Clear();
+                        Integers.Run();
+                        Line();
+                        Continue();
+                        break;
+                    case "exit" or "quit" or "q":
+                        Console.Clear();
+                        Console.WriteLine("Exited.");
                         return;
                     default:
                         Console.Clear();
