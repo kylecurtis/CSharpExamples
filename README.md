@@ -19,19 +19,19 @@ A streamlined, menu-driven CLI tool designed to showcase interactive C# examples
 
 ## Running Locally
 
-1. Clone the repo
+1. Clone the repository
 
 ```bash
 git clone https://github.com/kylecurtis/csharp-examples.git
 ```
 
-2. Change directory to repository
+2. Navigate to Repository Directory
 
 ```bash
 cd path/to/repo/
 ```
 
-3. Run the project
+3. Build & Run the Project
 
 ```bash
 dotnet run --project CSharpExamples
