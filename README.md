@@ -1,4 +1,4 @@
-# C# Examples
+![csharp-examples-banner](https://github.com/kylecurtis/csharp-examples/assets/30717363/e0d16b13-7dba-43c4-9989-d940a43ec91b)
 
 A menu-driven CLI tool designed to showcase interactive C# examples across a variety of programming topics.
 
