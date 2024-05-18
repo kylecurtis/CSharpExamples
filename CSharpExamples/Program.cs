@@ -9,7 +9,7 @@ namespace CSharpExamples
         {
             static void Line()
             {
-                Console.WriteLine("===========================================================");
+                Console.WriteLine("------------------------------------------------");
             }
 
             static void Continue()
@@ -19,55 +19,69 @@ namespace CSharpExamples
                 Console.ReadLine();
             }
 
+            static void MethodCall(Action topicMethod)
+            {
+                Line();
+                topicMethod();
+                Line();
+                Continue();
+            }
+
             while (true)
             {
                 Console.Clear();
                 Console.WriteLine(
-                    """
-                    C# BASICS
-                    ---------
-                      - Hello, World! (hello)
-                      - Variables (var)
-                    
-                    DATA TYPES
-                    ----------
-                      - Integers (int)
-                      - Floats (float)
+                """
+                ------------------------------------------------
+                | C# Basics         | Command 
+                ------------------------------------------------
+                | Hello, World!     | hello
+                | Variables         | var
+                
+                ------------------------------------------------
+                | Data Types        | Command 
+                ------------------------------------------------
+                | Booleans          | bool
+                | Integers          | int
+                | Floats            | float
+                | Strings           | string
+              
+                ------------------------------------------------
+                | Help              | Command 
+                ------------------------------------------------
+                | exit              | q
                   
-                    MENU
-                    ----
-                      - exit (q)
-                      
-                    """);
+                """);
                 Console.Write("> ");
 
                 string? choice = Console.ReadLine();
 
                 switch (choice)
                 {
-                    case "hello world" or "hello":
+                    case "hello":
                         Console.Clear();
-                        HelloWorld.Run();
-                        Line();
-                        Continue();
+                        Console.WriteLine("Hello, World!");
+                        MethodCall(HelloWorld.Run);
                         break;
-                    case "variables" or "var":
+                    case "var":
                         Console.Clear();
-                        Variables.Run();
-                        Line();
-                        Continue();
+                        Console.WriteLine("Variables:");
+                        MethodCall(Variables.Run);
                         break;
-                    case "floats" or "float":
+                    case "float":
                         Console.Clear();
-                        Floats.Run();
-                        Line();
-                        Continue();
+                        Console.WriteLine("Floating Point Numbers:");
+                        MethodCall(Floats.Run); 
                         break;
-                    case "integers" or "int":
+                    case "string":
                         Console.Clear();
-                        Integers.Run();
-                        Line();
-                        Continue();
+                        Console.WriteLine("Strings:");
+                        MethodCall(Strings.Run);
+                        break;
+                    case "int":
+                        Console.Clear();
+                        Console.WriteLine("Integrals:");
+                        MethodCall(Integers.Run);
                         break;
                     case "exit" or "quit" or "q":
                         Console.Clear();

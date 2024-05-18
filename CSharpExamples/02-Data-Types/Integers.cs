@@ -6,9 +6,6 @@ namespace CSharpExamples._02_Data_Types
     {
         public static void Run()
         {
-            // Title
-            Console.WriteLine("Integers:");
-            
             // Integer Literals
             // =============================================================================
             var decimalNumber = 42; // Decimal (no prefix)

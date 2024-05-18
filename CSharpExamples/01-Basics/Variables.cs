@@ -4,9 +4,6 @@
     {
         public static void Run()
         {
-            // Title
-            Console.WriteLine("Variables:");
-
             // Variable Declaration
             int noNumber;
             

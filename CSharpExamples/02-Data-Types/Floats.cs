@@ -4,9 +4,6 @@ internal class Floats
 {
     public static void Run()
     {
-       // Title
-       Console.WriteLine("Floating Point Numbers:");
-       
        // =============================================================================
        
        // Float (System.Single).
