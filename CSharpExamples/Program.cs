@@ -83,6 +83,11 @@ namespace CSharpExamples
                         Console.WriteLine("Integrals:");
                         MethodCall(Integers.Run);
                         break;
+                    case "bool":
+                        Console.Clear();
+                        Console.WriteLine("Booleans:");
+                        MethodCall(Booleans.Run);
+                        break;
                     case "exit" or "quit" or "q":
                         Console.Clear();
                         Console.WriteLine("Exited.");
