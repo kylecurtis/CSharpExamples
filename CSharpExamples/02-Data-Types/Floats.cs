@@ -7,10 +7,10 @@ internal class Floats
        // =============================================================================
        
        // FLOAT
-       // - DOTNET TYPE: (System.Single).
-       // - SIZE: 32 bits (4 bytes).
-       // - PRECISION: ~6-9 digits.
-       // - APPROXIMATE RANGE: +-1.5 * 10^-45 to +-3.4 * 10^38.
+       // - DOTNET TYPE: (System.Single)
+       // - SIZE: 32 bits (4 bytes)
+       // - PRECISION: ~6-9 digits
+       // - APPROXIMATE RANGE: +-1.5 * 10^-45 to +-3.4 * 10^38
        
        float pi = 3.14159f; // "f" or "F" suffix is required!
        Console.WriteLine($"Float (pi): {pi}");
@@ -18,26 +18,26 @@ internal class Floats
        // =============================================================================
        
        // DOUBLE
-       // - DOTNET TYPE: (System.Double).
-       // - SIZE: 64 bits (8 bytes).
-       // - PRECISION: ~15-17 digits.
-       // - APPROXIMATE RANGE: +-5.0 * 10^-324 to +-1.7 * 10^308.
+       // - DOTNET TYPE: (System.Double)
+       // - SIZE: 64 bits (8 bytes)
+       // - PRECISION: ~15-17 digits
+       // - APPROXIMATE RANGE: +-5.0 * 10^-324 to +-1.7 * 10^308
       
        double distance = 2.718281828459045;
        Console.WriteLine($"Double (distance): {distance}");
        
        // NOTE:
-       // - Double is the default type for real numbers in C#.
-       // - No suffix is required for the double type.
-       // - "d" or "D" suffix can still be used.
+       // - Double is the default type for real numbers in C#
+       // - No suffix is required for the double type
+       // - "d" or "D" suffix can still be used
     
        // =============================================================================
        
        // DECIMAL
-       // - DOTNET TYPE: (System.Decimal).
-       // - SIZE: 128 bits / 16 bytes.
-       // - PRECISION: 28-29 digits.
-       // - APPROXIMATE RANGE: +- 1.0 * 10^-28 to +-7.9228 * 10^28.
+       // - DOTNET TYPE: (System.Decimal)
+       // - SIZE: 128 bits (16 bytes)
+       // - PRECISION: 28-29 digits
+       // - APPROXIMATE RANGE: +- 1.0 * 10^-28 to +-7.9228 * 10^28
 
        decimal price = 9.99m; // "m" or "M" suffix is required!
        Console.WriteLine($"Price: {price}");
