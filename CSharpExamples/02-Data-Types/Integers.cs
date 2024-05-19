@@ -6,8 +6,9 @@ namespace CSharpExamples._02_Data_Types
     {
         public static void Run()
         {
-            // Integer Literals
+            // INTEGER LITERALS 
             // =============================================================================
+            
             var decimalNumber = 42; // Decimal (no prefix)
             var hexNumber = 0x2A; // Hexadecimal (0x or 0X prefix)
             var binaryNumber = 0b_0010_1010; // Binary (0b or 0B prefix)
@@ -16,108 +17,136 @@ namespace CSharpExamples._02_Data_Types
             Console.WriteLine($"Hexadecimal number: {hexNumber}");
             Console.WriteLine($"Binary number: {binaryNumber}");
 
-            // Signed Integers (Positive and negative numbers)
+            // SIGNED INTEGERS (POSITIVE & NEGATIVE NUMBERS)
             // =============================================================================
-            // Sbyte (System.SByte): 8-bit signed integer.
-            // Range: -128 to 127.
+            
+            // SBYTE
+            // - DOTNET TYPE: (System.SByte)
+            // - SIZE: 8-bit signed integer
+            // - RANGE: -128 to 127
+            
             sbyte sbyteNumber = -128;
             Console.WriteLine($"Signed byte: {sbyteNumber}");
            
-            // Short (System.Int16): 16-bit signed integer.
-            // Range: -32,768 to 32,767.
+            // SHORT
+            // - DOTNET TYPE: (System.Int16)
+            // - SIZE: 16 bits (2 bytes)
+            // - RANGE: -32,768 to 32,767
+            
             short shortNumber = -32_768;
             Console.WriteLine($"Signed short: {shortNumber}");
 
-            // Int (System.Int32): 32-bit signed integer.
-            // Range: -2,147,483,648 to 2,147,483,647.
+            // INT
+            // - DOTNET TYPE: (System.Int32)
+            // - SIZE: 32 bits (4 bytes)
+            // - RANGE: -2,147,483,648 to 2,147,483,647
+            
             int intNumber = -2_147_483_648;
             Console.WriteLine($"Signed int: {intNumber}");
 
-            // Long (System.Int64): 64-bit signed integer.
-            // Range: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.
+            // LONG
+            // - DOTNET TYPE: (System.Int64)
+            // - SIZE: 64 bits (8 bytes)
+            // - RANGE: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+            
             long longNumber = -9_223_372_036_854_775_808;
             Console.WriteLine($"Signed long: {longNumber}");
 
-            // Unsigned Integers (Positive numbers only)
+            // UNSIGNED INTEGERS (POSITIVE NUMBERS ONLY)
             // =============================================================================
-            // Byte (System.Byte): 8-bit unsigned integer.
-            // Range: 0 to 255.
+            
+            // BYTE
+            // - DOTNET TYPE: (System.Byte)
+            // - SIZE: 8 bits (1 byte)
+            // - RANGE: 0 to 255
+            
             byte byteNumber = 255;
             Console.WriteLine($"Unsigned byte: {byteNumber}");
 
-            // Ushort (System.UInt16): 16-bit unsigned integer.
-            // Range: 0 to 65,535.
+            // USHORT
+            // - DOTNET TYPE: (System.UInt16)
+            // - SIZE: 16 bits (2 bytes)
+            // - RANGE: 0 to 65,535
+            
             ushort ushortNumber = 65_535;
             Console.WriteLine($"Unsigned short: {ushortNumber}");
             
-            // Uint (System.UInt32): 32-bit unsigned integer.
-            // Range: 0 to 4_294_967_295.
+            // UINT
+            // - DOTNET TYPE: (System.UInt32)
+            // - SIZE: 32 bits (4 bytes) 
+            // - RANGE: 0 to 4_294_967_295
+            
             uint uintNumber = 4_294_967_295;
             Console.WriteLine($"Unsigned int: {uintNumber}");
             
-            // Ulong (System.UInt64): 64-bit unsigned integer.
-            // Range: 0 to 18_446_744_073_709_551_615.
+            // ULONG
+            // - DOTNET TYPE: (System.UInt64)
+            // - SIZE: 64 bits (8 bytes)
+            // - RANGE: 0 to 18_446_744_073_709_551_615
+            
             ulong ulongNumber = 18_446_744_073_709_551_615;
             Console.WriteLine($"Unsigned long: {ulongNumber}");
             
-            // BigInteger
+            // BIGINTEGER
             // =============================================================================
             
-            // Constructor: From Integer
+            // CONSTRUCTOR: FROM INTEGER
             BigInteger bigIntFromInt = new BigInteger(12345678901234567890);
             Console.WriteLine($"Big Integer (from int) : {bigIntFromInt}");
             
-            // Constructor: From String
+            // CONSTRUCTOR: FROM STRING
             BigInteger bigIntFromString = BigInteger.Parse("123456789012345678901234567890");
             Console.WriteLine($"Big Integer (from string) : {bigIntFromString}");
             
-            // Constructor: From Bytes
+            // CONSTRUCTOR: FROM BYTES
             BigInteger bigIntFromBytes = new BigInteger(new byte[] { 0x01, 0x00, 0x00, 0x00, 0x00 });
             Console.WriteLine($"Big Integer (from bytes) : {bigIntFromBytes}");
             
-            // Common Methods
+            // COMMON BIGINTEGER METHODS
             // =============================================================================
+            
             BigInteger bigIntFirst = BigInteger.Parse("481516234248151623424815162342");
             BigInteger bigIntSecond = BigInteger.Parse("12345678901234567890");
             
-            // Addition (sum)
+            // ADDITION (SUM)
             BigInteger bigIntSum = BigInteger.Add(bigIntFirst, bigIntSecond);
             Console.WriteLine($"Big Integer (sum): {bigIntSum}");
             
-            // Subtraction (difference)
+            // SUBTRACTION (DIFFERENCE)
             BigInteger bigIntDifference = BigInteger.Subtract(bigIntFirst, bigIntSecond);
             Console.WriteLine($"Big Integer (difference): {bigIntDifference}");
             
-            // Multiply (product)
+            // MULTIPLY (PRODUCT)
             BigInteger bigIntProduct = BigInteger.Multiply(bigIntFirst, bigIntSecond);
             Console.WriteLine($"Big Integer (product): {bigIntProduct}");
             
-            // Division (quotient)
+            // DIVISION (QUOTIENT)
             BigInteger bigIntQuotient = BigInteger.Divide(bigIntFirst, bigIntSecond);
             Console.WriteLine($"Big Integer (quotient): {bigIntQuotient}");
             
-            // Modulus (Remainder Of Division)
+            // MODULUS (REMAINDER AFTER DIVISION)
             BigInteger bigIntModulus = BigInteger.Remainder(bigIntFirst, bigIntSecond);
             Console.WriteLine($"Big Integer (modulus): {bigIntModulus}");
             
-            // Power (Power Of)
+            // POWER (POWER OF)
             BigInteger bigIntPower = BigInteger.Pow(bigIntFirst, 2);
             Console.WriteLine($"Big Integer (power of 2): {bigIntPower}");
             
-            // Greatest Common Divisor (GCD)
+            // GREATEST COMMON DIVISOR (GCD)
             BigInteger bigIntGcd = BigInteger.GreatestCommonDivisor(bigIntFirst, new BigInteger(123));
             Console.WriteLine($"Big Integer (GCD of 123): {bigIntGcd}");
             
-            // Negation
+            // NEGATION
             BigInteger bigIntNegation = BigInteger.Negate(bigIntFirst);
             Console.WriteLine($"Big Integer (Negation): {bigIntNegation}");
             
-            // Absolute Value (Abs)
+            // ABSOLUTE VALUE (ABS)
             BigInteger bigIntAbs = BigInteger.Abs(bigIntNegation);
             Console.WriteLine($"Big Integer (Abs): {bigIntAbs}");
             
-            // Bitwise Operations
+            // BITWISE OPERATIONS
             // =============================================================================
+            
             BigInteger andResult = new BigInteger(100) & new BigInteger(1000);
             Console.WriteLine($"Bitwise And: {andResult}");
             
