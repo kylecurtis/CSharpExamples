@@ -6,23 +6,22 @@ internal class Floats
     {
        // =============================================================================
        
-       // Float (System.Single).
-       // Size: 32 bits / 4 bytes.
-       // Precision: ~6-9 digits.
-       // Approximate Range: +-1.5 * 10^-45 to +-3.4 * 10^38.
+       // FLOAT
+       // - DOTNET TYPE: (System.Single).
+       // - SIZE: 32 bits (4 bytes).
+       // - PRECISION: ~6-9 digits.
+       // - APPROXIMATE RANGE: +-1.5 * 10^-45 to +-3.4 * 10^38.
        
-       float pi = 3.14159f; 
+       float pi = 3.14159f; // "f" or "F" suffix is required!
        Console.WriteLine($"Float (pi): {pi}");
-       
-       // NOTE:
-       // - "f" or "F" suffix is required when initializing floats.
        
        // =============================================================================
        
-       // Double (System.Double).
-       // Size: 64 bits / 8 bytes.
-       // Precision: ~15-17 digits.
-       // Range: +-5.0 * 10^-324 to +-1.7 * 10^308.
+       // DOUBLE
+       // - DOTNET TYPE: (System.Double).
+       // - SIZE: 64 bits (8 bytes).
+       // - PRECISION: ~15-17 digits.
+       // - APPROXIMATE RANGE: +-5.0 * 10^-324 to +-1.7 * 10^308.
       
        double distance = 2.718281828459045;
        Console.WriteLine($"Double (distance): {distance}");
@@ -34,12 +33,13 @@ internal class Floats
     
        // =============================================================================
        
-       // Decimal (System.Decimal).
-       // Size: 128 bits / 16 bytes.
-       // Precision: 28-29 digits.
-       // Approximate Range: +- 1.0 * 10^-28 to +-7.9228 * 10^28.
+       // DECIMAL
+       // - DOTNET TYPE: (System.Decimal).
+       // - SIZE: 128 bits / 16 bytes.
+       // - PRECISION: 28-29 digits.
+       // - APPROXIMATE RANGE: +- 1.0 * 10^-28 to +-7.9228 * 10^28.
 
-       decimal price = 9.99m;
+       decimal price = 9.99m; // "m" or "M" suffix is required!
        Console.WriteLine($"Price: {price}");
         
        // NOTE:
@@ -48,9 +48,9 @@ internal class Floats
        
        // =============================================================================
        
-       // Float & Double Disadvantages:
-       // Because the float and double type are not as accurate as the decimal type,
-       // certain calculations will return inaccurate results. For example:
+       // FLOAT & DOUBLE DISADVANTAGES:
+       // - Because the float and double type are not as accurate as the decimal type,
+       // - Certain calculations will return inaccurate results. For example:
        
        double doubleX = 0.1;
        double doubleY = 0.2;
