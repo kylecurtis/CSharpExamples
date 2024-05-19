@@ -15,6 +15,7 @@ A menu-driven CLI tool designed to showcase interactive C# examples across a var
 
 ### Data Types
 
+- [Boolean](https://github.com/kylecurtis/csharp-examples/blob/main/CSharpExamples/02-Data-Types/Booleans.cs)
 - [Floats](https://github.com/kylecurtis/csharp-examples/blob/main/CSharpExamples/02-Data-Types/Floats.cs)
 - [Integers](https://github.com/kylecurtis/csharp-examples/blob/main/CSharpExamples/02-Data-Types/Integers.cs)
 - [Strings](https://github.com/kylecurtis/csharp-examples/blob/main/CSharpExamples/02-Data-Types/Strings.cs)
