@@ -71,7 +71,7 @@ namespace CSharpExamples
                     case "float":
                         Console.Clear();
                         Console.WriteLine("Floating Point Numbers:");
-                        MethodCall(Floats.Run); 
+                        MethodCall(Floats.Run);
                         break;
                     case "string":
                         Console.Clear();
